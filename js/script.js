@@ -1,4 +1,3 @@
-// Array de posts
 const posts = [
   {
   id: 1,
@@ -29,7 +28,6 @@ const posts = [
 }
 ];
 
-// Función para renderizar posts
 function renderPosts() {
   const container = document.getElementById('posts-container');
   container.innerHTML = '';
@@ -68,7 +66,6 @@ document.addEventListener('click', (e) => {
 // Cargar posts al inicio
 renderPosts();
 
-// Función del modal
 function loadPost(post) {
   document.getElementById('postModalTitle').innerText = post.title;
   document.getElementById('postModalBody').innerText = post.content;
@@ -83,6 +80,7 @@ function loadPost(post) {
     modalImage.classList.add('d-none');
   }
 }
+
 
 
 
